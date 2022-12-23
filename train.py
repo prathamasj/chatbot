@@ -1,10 +1,12 @@
 # libraries
 import random
+import tensorflow
 from tensorflow.keras.optimizers import SGD
 from keras.layers import Dense, Dropout
 from keras.models import load_model
 from keras.models import Sequential
 import numpy as np
+import pandas as pd
 import pickle
 import json
 import nltk
@@ -44,22 +46,22 @@ words = sorted(list(set(words)))
 
 classes = sorted(list(set(classes)))
 
-print(len(documents), "documents")
+print("\n",len(documents), "documents")
 
-print(len(classes), "classes", classes)
+print("\n",len(classes), "classes", classes)
 
-print(len(words), "unique lemmatized words", words)
+print("\n",len(words), "unique lemmatized words", words)
 
 
 pickle.dump(words, open("words.pkl", "wb"))
 pickle.dump(classes, open("classes.pkl", "wb"))
 
 # initializing training data
-training = []
+training = list()
 output_empty = [0] * len(classes)
 for doc in documents:
     # initializing bag of words
-    bag = []
+    bag = list()
     # list of tokenized words for the pattern
     pattern_words = doc[0]
     # lemmatize each word - create base word, in attempt to represent related words
@@ -72,9 +74,13 @@ for doc in documents:
     output_row = list(output_empty)
     output_row[classes.index(doc[1])] = 1
 
-    training.append([bag, output_row])
+    training.append([bag, output_row])#3d data set is being made
 # shuffle our features and turn into np.array
 random.shuffle(training)
+for i in training:
+    for j in i:
+        print(j,end=" ")
+    print("")
 training = np.array(training)
 # create train and test lists. X - patterns, Y - intents
 train_x = list(training[:, 0])

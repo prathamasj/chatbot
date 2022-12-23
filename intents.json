@@ -26,19 +26,13 @@
         {
             "tag": "name1",
             "patterns": ["what's your name?","who are you?"],
-            "responses": ["I'm just a chat agent. I only exist in the internet","I'm a KCA chat agent","I am a servent to my master "],
+            "responses": ["I'm just a chat agent. I only exist in the internet","I'm a KCA chat agent","I am a servent to my Master,ie,the CR "],
             "context": [""]
         },
         {
             "tag": "name",
             "patterns": ["my name is ", "I'm ","I am"],
             "responses": ["Oooh great to meet you {n}. How may I assist you {n}", "Oh, I'll keep that in mind {n}"],
-            "context": [""]
-        },
-        {
-            "tag": "date",
-            "patterns": ["coffee?", "can i take you out on a date"],
-            "responses": ["Aaw, that's so sweet of you. Too bad am a Bot."],
             "context": [""]
         },
         {
@@ -328,6 +322,19 @@
             "patterns": ["what's popping","wassup popping"],
             "responses": ["So that you can pop with it!?"],
             "context": [""]
+        },
+        {
+            "tag":"min_marks",
+            "patterns":["what's the minimum marks for pass?","whats the minimum marks for mse?","Whats the critieria for writing SEE?"],
+            "responses":["Mnimum of 20 marks for writing see and total 40 for passing the course"],
+            "context":[""]
+        },
+        {
+            "tag":"projector",
+            "patterns":["Where I can find the projector remote?"],
+            "responses":["ASk the STAFF,Not Me"],
+            "context":[""]
         }
+
     ]
 }
