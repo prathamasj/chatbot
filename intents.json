@@ -26,7 +26,7 @@
         {
             "tag": "name1",
             "patterns": ["what's your name?","who are you?"],
-            "responses": ["I'm just a chat agent. I only exist in the internet","I'm a KCA chat agent"],
+            "responses": ["I'm just a chat agent. I only exist in the internet","I'm a KCA chat agent","I am a servent to my master "],
             "context": [""]
         },
         {

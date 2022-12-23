@@ -10,10 +10,11 @@ import json
 import nltk
 from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
+"""
 nltk.download('omw-1.4')
 nltk.download("punkt")
 nltk.download("wordnet")
-
+"""
 
 # init file
 words = []
