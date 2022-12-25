@@ -513,7 +513,7 @@
         },
         {
             "tag": "mistake",
-            "patterns": ["I was marked absent by mistake for today's class,"There’s a mistake in my entered marks"],
+            "patterns": ["I was marked absent by mistake for today's class,"There is a mistake in my marks"],
             "responses": ["I will inform the concerned faculty"],
             "context": [""]
         },
@@ -617,7 +617,7 @@
         },
         {
             "tag": "exam_time",
-            "patterns": ["What's the exam timing",What time do we have the exam"],
+            "patterns": ["What's the exam timing","What time do we have the exam"],
             "responses": ["9:00 to 10:00"],
             "context": [""]
         },
