@@ -513,7 +513,7 @@
         },
         {
             "tag": "mistake",
-            "patterns": ["I was marked absent by mistake for today's class,"There is a mistake in my marks"],
+            "patterns": ["I was marked absent by mistake for today's class","There is a mistake in my marks"],
             "responses": ["I will inform the concerned faculty"],
             "context": [""]
         },
