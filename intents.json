@@ -379,7 +379,7 @@
         },
         {
             "tag": "contact_information",
-            "patterns": [" can you send me ma'am's number"," can you send me sir's contact info","Can you send me the mail id of],
+            "patterns": [" can you send me ma'am's number"," can you send me sir's contact info","Can you send me the mail id of"],
             "responses": ["Yes of course","Mail id: ","Here you go"],
             "context": [""]
         },
