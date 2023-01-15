@@ -690,7 +690,7 @@
         {
             "tag":"class",
             "patterns":["Do we have class today? ","Is it compulsory to attend the event?","Is the lab/event/class rescheduled?"],
-            "response":["yes","no"],
+            "response":["yes","No"],
             "context":[""]
         }
        
